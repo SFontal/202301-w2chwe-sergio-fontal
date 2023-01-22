@@ -14,10 +14,9 @@ const joinCells = (arrayCells) => {
   }
 
   const joinedCells = [];
+  let row = 0;
+  let column = 1;
   arrayCells.forEach((cell, index) => {
-    let row = 0;
-    let column = 1;
-
     if (index === 3 || index === 6) {
       row++;
     }
@@ -25,13 +24,15 @@ const joinCells = (arrayCells) => {
     joinedCells.push({
       row,
       column,
-      isAlive: arrayCells[index],
-      nextStatus: arrayCells[index],
+      isAlive: cell,
+      nextStatus: cell,
     });
 
     if (column === 3) {
-      column = 1;
+      column = 0;
     }
+
+    column++;
   });
 
   return joinedCells;
