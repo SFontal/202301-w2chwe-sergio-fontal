@@ -4,7 +4,7 @@ const createCells = (mode) => {
   }
 
   const cellRandomStatus = () => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
       const randomStatus = Math.floor(Math.random() * 2);
       const cellStatus = randomStatus === 1;
       arrayCells.push(cellStatus);
