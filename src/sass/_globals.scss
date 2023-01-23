@@ -1,16 +1,15 @@
 @use "variables/colors";
 
 html {
-  background-color: colors.$color-dead;
+  background-color: colors.$background-secondary;
   display: flex;
   justify-content: center;
 }
 
 body {
-  background-color: colors.$color-alive-secondary;
+  background-color: colors.$background-primary;
   font-size: 0.75rem;
-  max-width: 3.1875rem;
-  min-height: 3.1875rem;
+  max-width: 849px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
