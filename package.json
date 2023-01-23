@@ -7,8 +7,10 @@
     "test": "jest",
     "test:dev": "jest --watchAll=true",
     "prepare": "husky install",
-    "build:dev": "rimraf dist && parcel src/index.html",
-    "build": "rimraf dist && parcel build src/index.html --no-source-maps"
+    "prebuild": "rimraf dist",
+    "prebuild:dev": "rimraf dist",
+    "build:dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps"
   },
   "keywords": [],
   "author": "",
