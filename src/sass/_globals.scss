@@ -1,0 +1,19 @@
+@use "variables/colors";
+
+html {
+  background-color: colors.$color-dead;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: colors.$color-alive-secondary;
+  font-size: 0.75rem;
+  max-width: 3.1875rem;
+  min-height: 3.1875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 0.0625rem;
+}
